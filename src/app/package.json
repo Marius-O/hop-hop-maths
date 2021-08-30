@@ -2,7 +2,8 @@
   "name": "@cloud-tunes/hop-hop-maths",
   "devDependencies": {
     "@types/react": "^17.0.19",
-    "@types/react-dom": "^17.0.9"
+    "@types/react-dom": "^17.0.9",
+    "eslint": "^7.32.0"
   },
   "dependencies": {
     "react": "^17.0.2",

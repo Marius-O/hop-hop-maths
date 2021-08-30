@@ -1,12 +1,12 @@
-let path = require('path');
+const path = require("path");
 
 module.exports = {
-  mode: 'production',
+  mode: "production",
   entry: {
-    bundle: path.resolve(__dirname, '../src/app/index.tsx'),
+    bundle: path.resolve(__dirname, "../src/app/index.tsx"),
   },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js', '.json']
+    extensions: [".tsx", ".ts", ".js", ".json"],
   },
   module: {
     rules: [
@@ -14,9 +14,9 @@ module.exports = {
         test: /\.(j|t)sx?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
-        }
-      }
-    ]
-  }
-}
+          loader: "babel-loader",
+        },
+      },
+    ],
+  },
+};

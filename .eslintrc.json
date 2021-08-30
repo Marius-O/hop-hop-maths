@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "env": {
+    "browser": true
+  },
+  "parserOptions": {
+    "project": [
+      "./tsconfig.json",
+      "./tsconfig.eslint.json"
+    ]
+  }
+}

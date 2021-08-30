@@ -1,13 +1,13 @@
-let path = require('path');
-let webpackConfig = require('./webpack.config');
+const path = require("path");
+const webpackConfig = require("./webpack.config");
 
 module.exports = {
   ...webpackConfig,
-  mode: 'development',
-  devtool: 'eval-source-map',
+  mode: "development",
+  devtool: "eval-source-map",
   devServer: {
     static: {
-      directory: path.join(__dirname, '../public'),
+      directory: path.join(__dirname, "../public"),
     },
-  }
-}
+  },
+};
