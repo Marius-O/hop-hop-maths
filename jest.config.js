@@ -1,6 +1,7 @@
+const base = require("./jest.config.base");
+
 module.exports = {
-  projects: ["<rootDir>/src/app"],
-  globals: {
-    "ts-jest": {},
-  },
+  ...base,
+  roots: ["<rootDir>"],
+  projects: ["<rootDir>/src/app", "<rootDir>/src/packages/*"],
 };

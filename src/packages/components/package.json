@@ -1,0 +1,19 @@
+{
+  "name": "@cloudtunes/components",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.19",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "jest": "^27.1.0",
+    "ts-jest": "^27.0.5",
+    "@types/react-dom": "^17.0.9"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

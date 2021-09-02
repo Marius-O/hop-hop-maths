@@ -1,6 +1,7 @@
 {
   "include": [
     "./build/*.js",
-    "jest.config.js"
+    "jest.config.js",
+    "jest.config.base.js"
   ]
 }
