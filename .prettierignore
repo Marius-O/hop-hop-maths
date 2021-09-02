@@ -1,4 +1,2 @@
 dist/
-lerna.json
-.eslintrc.json
-tsconfig.eslint.json
+*.json

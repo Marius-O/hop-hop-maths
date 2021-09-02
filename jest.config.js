@@ -1,5 +1,5 @@
 module.exports = {
-  projects: ["<rootDir>/src/app"],
+  projects: ["<rootDir>/src/app", "<rootDir>"],
   globals: {
     "ts-jest": {},
   },
