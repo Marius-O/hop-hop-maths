@@ -1,6 +1,9 @@
 {
   "name": "@cloudtunes/themes",
   "version": "0.0.0",
-  "devDependencies": {},
-  "dependencies": {}
+  "devDependencies": {
+  },
+  "dependencies": {
+    "@emotion/react": "^11.4.1"
+  }
 }
