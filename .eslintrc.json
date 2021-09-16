@@ -13,5 +13,9 @@
       "./tsconfig.json",
       "./tsconfig.eslint.json"
     ]
+  },
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }

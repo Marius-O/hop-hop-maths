@@ -7,6 +7,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".json"],
+    alias: { react: path.resolve("./node_modules/react") },
   },
   module: {
     rules: [
@@ -16,6 +17,10 @@ module.exports = {
         use: {
           loader: "babel-loader",
         },
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        type: "asset/resource",
       },
     ],
   },

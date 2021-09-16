@@ -7,6 +7,7 @@ declare module "@emotion/react" {
       secondary: string;
     };
     fonts: {
+      default: string;
       tile: string;
     };
   }
