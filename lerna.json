@@ -4,5 +4,6 @@
     "src/packages/*",
     "src/app"
   ],
-  "npmClient": "yarn"
+  "npmClient": "yarn",
+  "useWorkspaces": true
 }

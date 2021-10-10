@@ -1,7 +1,7 @@
 import { Global, useTheme, css } from "@emotion/react";
-import Button from "@cloudtunes/components/Button";
 import NumbersMatrix from "@cloudtunes/components/NumbersMatrix";
 import Globals from "@cloudtunes/themes/default/globals";
+import Test from "./Test";
 
 const App = () => {
   const theme = useTheme();
@@ -25,12 +25,25 @@ const App = () => {
             height: 100vh;
             font-size: 1.75vh;
           }
+
+          #app {
+            width: 100%;
+            height: 100%;
+            background-color: ${theme.colors.secondary};
+          }
         `}
       />
-      <section>
-        <div>App</div>
-        <Button>TEST</Button>
-        <NumbersMatrix lower={1} upper={100} lineLength={10} />
+      <section
+        css={css`
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        `}
+      >
+        <Test />
+        <NumbersMatrix lower={1} upper={100} />
       </section>
     </>
   );

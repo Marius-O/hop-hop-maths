@@ -4,8 +4,10 @@
     "email": "marius.onofrei@cloudtunes.ltd",
     "url": "https://github.com/CloudTunes-DS/hop-hop-maths.git"
   },
+  "private": true,
   "scripts": {
     "start": "webpack serve -c ./build/webpack.dev.config.js",
+    "bundle:analyse": "webpack -c ./build/webpack.analyser.config.js --profile --json > stats.json && webpack-bundle-analyzer stats.json",
     "tsc:check": "tsc --noEmit",
     "lint:check": "eslint --ext .js,.jsx,.ts,.tsx .",
     "pretty:check": "prettier --check .",
@@ -45,7 +47,12 @@
     "ts-jest": "^27.0.5",
     "typescript": "^4.4.2",
     "webpack": "^5.51.1",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0"
-  }
+  },
+  "workspaces": [
+    "./app",
+    "./packages/*"
+  ]
 }

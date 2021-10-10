@@ -7,7 +7,7 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js", ".json"],
-    alias: { react: path.resolve("./node_modules/react") },
+    alias: { react: path.resolve("./src/app/node_modules/react") },
   },
   module: {
     rules: [
@@ -16,6 +16,9 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
+          options: {
+            rootMode: "upward",
+          },
         },
       },
       {
